@@ -1,0 +1,80 @@
+// Editor styles
+
+atom-text-editor {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+  text-shadow: 0px 0px 20px @syntax-text-color;
+
+  .wrap-guide {
+    background-color: @syntax-wrap-guide-color;
+  }
+
+  .indent-guide {
+    box-shadow: inset 1px 0 @syntax-indent-guide-color;
+  }
+
+  .invisible-character {
+    color: @syntax-invisible-character-color;
+  }
+
+  .gutter {
+    background-color: @syntax-gutter-background-color;
+    color: @syntax-gutter-text-color;
+    text-shadow: 0px 0px 10px @syntax-gutter-text-color, 0px 0px 20px @syntax-gutter-text-color;
+
+    .line-number {
+      &.cursor-line {
+        background-color: @syntax-gutter-background-color-selected;
+        color: @syntax-gutter-text-color-selected;
+      }
+
+      &.cursor-line-no-selection {
+        color: @syntax-gutter-text-color-selected;
+      }
+    }
+  }
+
+  .gutter .line-number.folded,
+  .gutter .line-number:after,
+  .fold-marker:after {
+    color: @light-gray;
+  }
+
+  .line.cursor-line {
+    background-color: fade(@syntax-gutter-background-color-selected, 20%);
+  }
+
+  .invisible {
+    color: @syntax-text-color;
+    text-shadow: 0px 0px 20px @light-text;
+  }
+
+  .cursor {
+    color: @syntax-cursor-color;
+  }
+
+  .selection .region {
+    background-color: @syntax-selection-color;
+  }
+
+  .find-result .region {
+    background-color: @syntax-result-marker-color;
+    border: 2px solid transparent;
+  }
+
+  .current-result .region {
+    background-color: @syntax-result-marker-color-selected;
+    border: 2px solid @brown;
+  }
+
+  .bracket-matcher .region {
+    border-bottom: 1px solid @syntax-cursor-color;
+    box-sizing: border-box;
+  }
+}
+
+// Mini editor
+
+atom-text-editor[mini] .scroll-view {
+  padding-left: 1px;
+}

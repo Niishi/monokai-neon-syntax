@@ -1,0 +1,37 @@
+.syntax--source.syntax--gfm {
+  .syntax--markup {
+    -webkit-font-smoothing: auto;
+
+    &.syntax--heading {
+      color: @green;
+      font-weight: bold;
+      text-shadow: 0px 0px 20px @light-green;
+    }
+
+    &.syntax--raw {
+      background-color: @dark-gray;
+    }
+  }
+
+  .syntax--link {
+    .syntax--entity {
+      color: @yellow;
+      text-shadow: 0px 0px 20px @light-yellow;
+    }
+
+    .syntax--link {
+      color: @cyan;
+      text-shadow: 0px 0px 20px @light-cyan;
+    }
+  }
+
+  .syntax--quote {
+    font-style: italic;
+  }
+
+  .syntax--variable.syntax--list {
+    color: @red;
+    text-shadow: 0px 0px 20px @light-red;
+    font-weight: bold;
+  }
+}

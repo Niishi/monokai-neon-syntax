@@ -1,0 +1,253 @@
+// Syntax styles
+
+.syntax--comment {
+  color: @light-gray;
+  text-shadow: 0px 0px 10px @light-gray, 0px 0px 20px @light-gray;
+}
+
+.syntax--keyword {
+  color: @red;
+  text-shadow: 0px 0px 20px @light-red;
+
+  &.syntax--control,
+  &.syntax--operator {
+    color: @red;
+    text-shadow: 0px 0px 20px @light-red;
+  }
+}
+
+.syntax--storage {
+  color: @red;
+  text-shadow: 0px 0px 20px @light-red;
+
+  &.syntax--type {
+    color: @cyan;
+    text-shadow: 0px 0px 20px @light-cyan;
+  }
+}
+
+.syntax--constant {
+  color: @purple;
+  text-shadow: 0px 0px 20px @light-purple;
+  &.syntax--character.syntax--escape,
+  &.syntax--numeric {
+    color: @purple;
+    text-shadow: 0px 0px 20px @light-purple;
+  }
+
+  &.syntax--other.syntax--color {
+    color: @cyan;
+    text-shadow: 0px 0px 20px @light-cyan;
+  }
+}
+
+.syntax--variable {
+  color: @syntax-text-color;
+  text-shadow: 0px 0px 20px @syntax-text-color;
+  &.syntax--interpolation {
+    color: @red;
+    text-shadow: 0px 0px 20px @light-red;
+  }
+
+  &.syntax--parameter {
+    color: @orange;
+    text-shadow: 0px 0px 20px @light-orange;
+  }
+
+  &.syntax--language {
+    color: @orange;
+    text-shadow: 0px 0px 20px @light-orange;
+  }
+}
+
+.syntax--invalid.syntax--illegal {
+  background-color: @red;
+  color: @syntax-text-color;
+  text-shadow: 0px 0px 20px @syntax-text-color;
+}
+
+.syntax--string {
+  color: @yellow;
+  text-shadow: 0px 0px 20px @light-yellow;
+
+
+  &.syntax--other.syntax--link {
+    color: @red;
+    text-shadow: 0px 0px 20px @light-red;
+  }
+
+  &.syntax--regexp {
+    color: @orange;
+    text-shadow: 0px 0px 20px @light-orange;
+  }
+
+  .syntax--source {
+    color: @syntax-text-color;
+    text-shadow: 0px 0px 20px @syntax-text-color;
+  }
+}
+
+.syntax--punctuation {
+  &.syntax--definition {
+    &.syntax--comment {
+      color: @light-gray;
+    }
+
+    &.syntax--string {
+      color: @yellow;
+      text-shadow: 0px 0px 20px @light-yellow;
+    }
+
+    &.syntax--variable,
+    &.syntax--parameters,
+    &.syntax--array {
+      color: @syntax-text-color;
+      text-shadow: 0px 0px 20px @syntax-text-color;
+    }
+
+    &.syntax--heading,
+    &.syntax--identity {
+      color: @blue;
+      text-shadow: 0px 0px 20px @light-blue;
+    }
+
+    &.syntax--bold {
+      color: @orange;
+      font-weight: bold;
+      text-shadow: 0px 0px 20px @light-orange;
+    }
+
+    &.syntax--italic {
+      color: @purple;
+      text-shadow: 0px 0px 20px @light-purple;
+      font-style: italic;
+    }
+  }
+
+  &.syntax--section.syntax--embedded {
+    color: @red;
+    text-shadow: 0px 0px 20px @light-red;
+  }
+}
+
+.syntax--support {
+  &.syntax--constant,
+  &.syntax--function,
+  &.syntax--class,
+  &.syntax--type {
+    color: @cyan;
+    text-shadow: 0px 0px 20px @light-cyan;
+
+  }
+
+  &.syntax--function.syntax--any-method {
+    color: @blue;
+    text-shadow: 0px 0px 20px @light-blue;
+  }
+}
+
+.syntax--entity {
+  &.syntax--name.syntax--function,
+  &.syntax--name.syntax--class,
+  &.syntax--name.syntax--type,
+  &.syntax--other.syntax--attribute-name,
+  &.syntax--other.syntax--inherited-class {
+    color: @green;
+    text-shadow: 0px 0px 20px @light-green;
+  }
+
+  &.syntax--name.syntax--section {
+    color: @cyan;
+    text-shadow: 0px 0px 20px @light-cyan;
+  }
+
+  &.syntax--name.syntax--tag {
+    color: @red;
+    text-shadow: 0px 0px 20px @light-red;
+  }
+}
+
+.syntax--meta {
+  &.syntax--link {
+    color: @orange;
+    text-shadow: 0px 0px 20px @light-orange;
+  }
+
+  &.syntax--require {
+    color: @cyan;
+    text-shadow: 0px 0px 20px @light-cyan;
+  }
+
+  &.syntax--selector {
+    color: @purple;
+    text-shadow: 0px 0px 20px @light-purple;
+  }
+
+  &.syntax--separator {
+    background-color: @gray;
+    color: @syntax-text-color;
+    text-shadow: 0px 0px 20px @syntax-text-color;
+  }
+}
+
+.syntax--none {
+  color: @syntax-text-color;
+  text-shadow: 0px 0px 20px @syntax-text-color;
+}
+
+.syntax--markup {
+  &.syntax--bold {
+    color: @orange;
+    font-weight: bold;
+    text-shadow: 0px 0px 20px @light-orange;
+  }
+
+  &.syntax--italic {
+    color: @purple;
+    text-shadow: 0px 0px 20px @light-purple;
+    font-style: italic;
+  }
+
+  &.syntax--strike {
+    text-decoration: line-through;
+  }
+
+  &.syntax--underline {
+    text-decoration: underline;
+  }
+
+  &.syntax--inserted {
+    color: @green;
+    text-shadow: 0px 0px 20px @light-green;
+  }
+
+  &.syntax--changed {
+    color: @orange;
+    text-shadow: 0px 0px 20px @light-orange;
+  }
+
+  &.syntax--deleted {
+    color: @red;
+    text-shadow: 0px 0px 20px @light-red;
+  }
+
+  &.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
+    color: @blue;
+    text-shadow: 0px 0px 20px @light-blue;
+  }
+
+  &.syntax--list {
+    color: @red;
+    text-shadow: 0px 0px 20px @light-red;
+  }
+
+  &.syntax--quote {
+    color: @orange;
+    text-shadow: 0px 0px 20px @light-orange;
+  }
+
+  &.syntax--raw.syntax--inline {
+    color: @green;
+    text-shadow: 0px 0px 20px @light-green;
+  }
+}
