@@ -2,12 +2,16 @@
   "name": "monokai-neon-syntax",
   "theme": "syntax",
   "version": "0.0.0",
-  "description": "A short description of your syntax theme",
+  "description": "Neon monokai, like jewelry",
   "keywords": [
+      "monokai",
+      "neon",
+      "jewelry",
+      "dark",
     "syntax",
     "theme"
   ],
-  "repository": "https://github.com/atom/monokai-neon-syntax",
+  "repository": "https://github.com/Niishi/monokai-neon-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
