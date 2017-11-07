@@ -8,8 +8,7 @@
       "neon",
       "jewelry",
       "dark",
-    "syntax",
-    "theme"
+      "theme"
   ],
   "repository": "https://github.com/Niishi/monokai-neon-syntax",
   "license": "MIT",
