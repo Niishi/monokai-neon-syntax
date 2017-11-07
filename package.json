@@ -1,14 +1,14 @@
 {
   "name": "monokai-neon-syntax",
   "theme": "syntax",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Neon monokai, like jewelry",
   "keywords": [
-      "monokai",
-      "neon",
-      "jewelry",
-      "dark",
-      "theme"
+    "monokai",
+    "neon",
+    "jewelry",
+    "dark",
+    "theme"
   ],
   "repository": "https://github.com/Niishi/monokai-neon-syntax",
   "license": "MIT",
